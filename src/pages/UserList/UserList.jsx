@@ -52,7 +52,10 @@ const Header = styled.section`
   }
   h1 {
     color: ${(props) => props.theme.darkGray};
-    font-size: 1.9rem;
+    font-size: 1.3rem;
+    ${media.mobile_l} {
+      font-size: 1.9rem;
+    }
   }
   .filterWrapper {
     display: flex;

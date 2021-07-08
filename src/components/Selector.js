@@ -45,6 +45,7 @@ const SelectWrapper = styled.div`
     padding: 5px 0px 5px 5px;
     height: 1.5rem;
     align-items: center;
+    cursor: pointer;
     ::placeholder {
       color: ${(props) => props.theme.lightGray};
     }

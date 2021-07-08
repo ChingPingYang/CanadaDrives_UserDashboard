@@ -46,7 +46,7 @@ function UserListContainer() {
     setType(e.target.value);
   };
 
-  if (loading) <h1>Loading</h1>;
+  if (loading) return <h1>Loading...</h1>;
 
   return (
     <UserList

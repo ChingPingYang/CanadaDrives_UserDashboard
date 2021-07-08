@@ -13,5 +13,6 @@ export const getData = async (endPoint, options = {}) => {
     return response;
   } catch (err) {
     console.log(err);
+    throw Error("something went wrong...");
   }
 };
