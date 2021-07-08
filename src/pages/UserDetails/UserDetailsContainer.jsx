@@ -17,8 +17,8 @@ function UserDetailsContainer({ match: { params }, history }) {
     (async () => {
       setError(false);
       try {
-        const detailEndpoint = `http://jsonplaceholder.typicode.com/users/${params.id}`;
-        const postEndpoint = `http://jsonplaceholder.typicode.com/posts?userId=${params.id}`;
+        const detailEndpoint = `https://jsonplaceholder.typicode.com/users/${params.id}`;
+        const postEndpoint = `https://jsonplaceholder.typicode.com/posts?userId=${params.id}`;
         const responseArray = await Promise.all([
           getData(detailEndpoint),
           getData(postEndpoint),

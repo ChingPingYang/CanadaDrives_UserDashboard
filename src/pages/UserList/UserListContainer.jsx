@@ -14,7 +14,7 @@ function UserListContainer() {
 
   // fetch user list when component first mounts
   useEffect(() => {
-    getData("http://jsonplaceholder.typicode.com/users")
+    getData("https://jsonplaceholder.typicode.com/users")
       .then((response) => {
         setUserList(response.data);
       })
