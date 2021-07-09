@@ -59,12 +59,12 @@ const CardWrapper = styled(Link)`
       justify-content: space-between;
     }
     .userNameContainer {
-      /* border: solid 1px red; */
     }
     .emailContainer {
-      /* border: solid 1px red; */
-
       color: ${(props) => props.theme.mainBlue};
+      .email {
+        word-break: break-all;
+      }
     }
   }
 `;
